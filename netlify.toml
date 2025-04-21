@@ -1,10 +1,7 @@
 [build]
-  command = "bun run build"
+  command = "bun install && bun run build"
   publish = "dist"
-
-[[plugins]]
-  package = "netlify-plugin-use-bun"
+  environment = { NODE_VERSION = "20", USE_BUN = "1" }
 
 [build.environment]
-  USE_BUN = "1"
-  NODE_VERSION = "20"
+  NPM_FLAGS = "--version" # Engaña a Netlify para que no use npm
