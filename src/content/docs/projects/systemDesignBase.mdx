@@ -1,0 +1,86 @@
+---
+title: "Guia system Design"
+description: ""
+slug: "systemDesignBase"
+---
+ 
+
+## 1. Gestión de Inventario
+
+- Verificación de stock: Validar disponibilidad de productos antes de confirmar la orden.
+- Reserva de stock: Bloquear temporalmente productos para evitar ventas simultáneas.
+- Descuento de stock: Reducir el inventario al confirmar la orden.
+- Liberación de stock: Revertir reservas si la orden se cancela o falla el pago.
+- Sincronización en tiempo real: Actualizar niveles de inventario en múltiples sistemas.
+- Gestión de backorders: Permitir órdenes para productos agotados, con notificaciones de reposición.
+- Integración con proveedores: Alertar para reposición automática de stock bajo.
+
+## 2. Procesamiento de Pagos
+
+- Autorización de pagos: Validar fondos o límites de crédito.
+- Captura de pagos: Confirmar el cobro tras aprobación de la orden.
+- Reembolsos: Manejar devoluciones totales o parciales.
+- Múltiples métodos de pago: Tarjetas, wallets digitales, transferencias, etc.
+- Tokenización: Almacenar datos de pago de forma segura (PCI DSS).
+- Retry de pagos fallidos: Reintentar cobros por errores temporales (ej. red bancaria caída).
+- Conciliación: Verificar que los pagos coincidan con las órdenes.
+
+## 3. Gestión de Órdenes
+
+- Creación de órdenes: Generar órdenes con detalles (productos, precios, usuario).
+- Validación de órdenes: Chequear integridad de datos (ej. precios, descuentos).
+- Actualización de estado: Transiciones como pendiente, pagada, enviada, entregada, cancelada.
+- Historial de órdenes: Consulta de órdenes pasadas por usuarios o administradores.
+- Cancelación de órdenes: Revertir reservas y pagos si aplica.
+- Generación de facturas/recibos: Crear documentos legales en PDF u otros formatos.
+
+## 4. Notificaciones y Comunicación
+
+- Confirmación de orden: Email/SMS al usuario tras crear la orden.
+- Notificación de pago: Alertar éxito/fracaso del pago.
+- Alertas de envío: Integración con servicios de logística para updates de tracking.
+- Notificaciones internas: Alertar a equipos sobre errores críticos (ej. stock insuficiente).
+
+## 5. Manejo de Errores y Rollbacks
+
+- Transacciones atómicas: Asegurar que fallos en un paso (ej. pago) reviertan acciones previas (ej. reserva de stock).
+- Logging: Registrar errores para depuración.
+- Monitoreo: Alertas en tiempo real para fallos en pagos, inventario o integraciones.
+
+## 6. Integraciones Externas
+
+- APIs para:
+  - Autenticación: Validar usuarios (ej. JWT/OAuth).
+  - Catálogo de productos: Obtener precios y detalles.
+  - Servicios de envío: Calcular costos y generar guías.
+  - Analítica: Reportes de ventas, conversiones, etc.
+- Webhooks: Notificar a otros sistemas sobre eventos (ej. orden completada).
+
+## 7. Seguridad y Cumplimiento
+
+- Autenticación y autorización: Restringir acceso a endpoints críticos.
+- Encriptación: Proteger datos sensibles (ej. tarjetas de crédito).
+- Rate limiting: Prevenir abuso de APIs.
+- Auditoría: Registros de cambios en órdenes o inventario.
+- Cumplimiento normativo: GDPR, PCI DSS, etc.
+
+## 8. Funciones Adicionales
+
+- Descuentos y promociones: Aplicar cupones o ofertas.
+- Cálculo de impuestos y envíos: Integrar con APIs de taxación o logística.
+- Soporte multi-moneda y multi-idioma.
+- Escalabilidad: Manejar picos de tráfico (ej. Black Friday).
+- Idempotencia: Evitar órdenes duplicadas con claves únicas.
+- Concurrencia: Manejar reservas simultáneas sin conflictos.
+
+## 9. Reportes y Analítica
+
+- Métricas de rendimiento: Tiempo promedio de procesamiento, tasa de fallos.
+- Reportes financieros: Ventas diarias, ingresos por canal.
+- Dashboard: Visualización de datos para equipos internos.
+
+## 10. Optimización de Rendimiento
+
+- Caching: Almacenar datos frecuentes (ej. precios).
+- Procesamiento asíncrono: Usar colas (ej. RabbitMQ, Kafka) para tareas no críticas (ej. enviar emails).
+- APIs versionadas: Mantener compatibilidad con clientes antiguos.

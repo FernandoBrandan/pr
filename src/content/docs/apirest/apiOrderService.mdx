@@ -1,0 +1,84 @@
+---
+title: "api OrderService"
+description: "Api de ordenes de servicios gestiona el procesamiento de órdenes de compra."
+slug: "apiOrderService"
+---
+
+# Proyecto: OrderService
+
+El servicio **OrderService** gestiona el procesamiento de órdenes de compra, validación de clientes y artículos,
+y el pago de las órdenes, integrando RabbitMQ para la validación de stock y precios,
+así como una arquitectura Pub/Sub para procesos asincrónicos.
+
+> [Código fuente](https://github.com/)
+
+## Tecnologías utilizadas
+
+- Node.js + Express + TypeScript
+- RabbitMQ (Cola de mensajes para validación de stock y precios)
+- Pub/Sub (Procesos asincrónicos como notificaciones)
+- MongoDB
+- Docker
+
+# Arquitectura del Sistema
+
+El flujo del microservicio sigue la siguiente secuencia:
+
+- Recepción de la orden: Se reciben los datos del cliente y los artículos del carrito.
+- Validación de datos: Se verifica la información del cliente y la estructura del carrito de compra.
+- Validación de artículos: A través de RabbitMQ, se consulta el stock y los precios de los productos antes de proceder con la compra.
+- Procesamiento del pago: Si la validación es correcta, se genera el pago en apiPayment.
+- Creación de la orden: Se genera el detalle de la orden y luego la orden principal, estableciendo su estado como "pagado".
+- Procesos asincrónicos: Se utiliza una arquitectura Pub/Sub para gestionar tareas como la notificación al cliente, generación de tickets en PDF y otros procesos futuros.
+
+## Endpoints Disponibles
+
+### Crear una orden
+
+**POST** `/orders`
+
+```json
+{
+  "userId": "123",
+  "email": "john.doe@example.com",
+  "phoneNumber": "123456789",
+  "paid": false,
+  "amount": 2100,
+  "status": "",
+  "details": "...",
+  "cart": [
+    {
+      "api": "Library",
+      "itemId": 179687295,
+      "price": 200,
+      "quantity": 1
+    },
+    {
+      "api": "Library",
+      "itemId": 702348644,
+      "price": 100,
+      "quantity": 1
+    }
+  ]
+}
+```
+
+### Obtener todas las órdenes
+
+**GET** `/orders`
+
+### Obtener una orden por ID**\*\***\*\*\*\***\*\***
+
+**GET** `/orders/:id`
+
+### Obtener órdenes de un usuario
+
+**GET** `/orders/user/:userId`
+
+### Actualizar una orden
+
+**PUT** `/orders/:id`
+
+### Eliminar una orden
+
+**DELETE** `/orders/:id`

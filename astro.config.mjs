@@ -4,18 +4,27 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
+
+	devToolbar: {
+		enabled: false
+	},
 	integrations: [
 		starlight({
-			title: 'My Docs',
+			title: 'Proyectos',
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
-			sidebar: [
+			sidebar: [ 
 				{
-					label: 'Guides',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
-					],
+					label: 'Api\'s',
+					autogenerate: { directory: 'apirest' },
 				},
+				{
+					label: 'Projects',
+					autogenerate: { directory: 'projects' },
+				}, 
+				{
+					label: 'Notas',
+					autogenerate: { directory: 'notas' },
+				}, 
 				{
 					label: 'Reference',
 					autogenerate: { directory: 'reference' },
@@ -23,4 +32,5 @@ export default defineConfig({
 			],
 		}),
 	],
+
 });

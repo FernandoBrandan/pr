@@ -1,0 +1,49 @@
+---
+title: "Ecommerce"
+description: ""
+slug: "systemDesign"
+---
+
+## Introducción
+
+Idea Principales: Ecommerce, arquitectura de microservicios, basada en eventos y mensajería asíncrona.
+Los productos y servicios del Front se alimenta de la base de datos principal.
+Base de datos principal se cargan los registro desde api rest tipo crud.
+
+Logica de negocio principal:
+Transaciones de pago, envio de correo electronico, notificaciones, etc.
+
+Requerimientos Tecnicos:
+Gateway API, Balanceo de carga, Escalabilidad,
+Autenticacion, Autorizacion, Cacheo, Seguridad, Monitoreo,
+Integracion de pagos, Integracion de correo electronico, Integracion de notificaciones,
+Integracion de envio de productos, Integracion de almacenamiento de archivos,
+
+Flujo de trabajado:
+
+1. Usuario realiza una orden de compra
+2. Sistema verifica la disponibilidad de los productos y servicios
+3. Sistema procesa la orden de compra
+4. Sistema notifica al usuario sobre el estado de la orden
+5. Sistema actualiza la base de datos principal
+
+Extras:
+
+Servicios de citas/turnos: Generar turnos, Agendar citas, Cancelar citas, Tickets codigo de barras email, integracion con whatsapp.
+
+## Boceto 1
+
+<img src="./v1.svg" alt="Boceto 1" />
+
+## Etapas
+
+- Requerimientos: Identificar necesidades y especificaciones.
+- Diseño: Transformar requerimientos en estructuras para guiar la construcción.
+- Construcción: Desarrollo e integración de componentes.
+- Pruebas: Verificación de cumplimiento de requerimientos.
+- Implantación: Transición al entorno final.
+
+## Lecturas
+
+- **ARQUITECTURA DE SOFTWARE - Conceptos y ciclo de desarrollo**
+  `Humberto Cervantes Maceda, Perla Velasco-Elizondo, Luis Castro Careaga`

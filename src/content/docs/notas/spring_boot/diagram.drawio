@@ -1,0 +1,88 @@
+<mxfile host="65bd71144e">
+    <diagram id="x404vLuJpYLoEXAzhTFs" name="Página-1">
+        <mxGraphModel dx="981" dy="776" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#E6E6E6" math="0" shadow="1">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#000000;shape=mxgraph.azure.github_code;pointerEvents=1;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="360" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="&lt;pre style=&quot;color: rgb(211, 218, 227); background-color: rgb(47, 52, 63); font-family: &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; font-size: 16px; line-height: 22px; white-space: pre;&quot;&gt;&lt;br&gt;&lt;/pre&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="540" y="480" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="GitHub Repo&lt;br&gt;(Config files)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="440" width="160" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/integration/App_Configuration.svg;" parent="1" vertex="1">
+                    <mxGeometry x="280" y="360" width="75.29" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="Config Server&lt;br&gt;(spring-cloud-config)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="240" y="440" width="160" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.application_discovery_service;fillColor=#5294CF;gradientColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="480" y="360" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="Discovery Server&lt;br&gt;(Eureka Server)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="440" y="440" width="160" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="Fetch" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;" parent="1" vertex="1">
+                    <mxGeometry x="190" y="370" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="" style="endArrow=classic;startArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.03;entryY=0.504;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="2" target="10" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="310" y="480" as="sourcePoint"/>
+                        <mxPoint x="360" y="430" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="21" value="" style="endArrow=classic;startArrow=classic;html=1;exitX=0.966;exitY=0.504;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="10" target="12" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="355.28999999999996" y="400" as="sourcePoint"/>
+                        <mxPoint x="477.28999999999996" y="400" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="22" value="Register" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;" parent="1" vertex="1">
+                    <mxGeometry x="390" y="370" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="Provide Config" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;" parent="1" vertex="1">
+                    <mxGeometry x="320" y="520" width="160" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="" style="endArrow=classic;startArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="11" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="318" y="510" as="sourcePoint"/>
+                        <mxPoint x="320" y="630" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="25" value="" style="aspect=fixed;html=1;dashed=0;whitespace=wrap;verticalLabelPosition=bottom;verticalAlign=top;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon2;prIcon=api;" parent="1" vertex="1">
+                    <mxGeometry x="278.34" y="640" width="83.33" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="MS-cliente 1&lt;br&gt;(Eureka Client)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="260" y="720" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="" style="aspect=fixed;html=1;dashed=0;whitespace=wrap;verticalLabelPosition=bottom;verticalAlign=top;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon2;prIcon=api;" parent="1" vertex="1">
+                    <mxGeometry x="98.33999999999997" y="640" width="83.33" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="MS-cliente 2&lt;br&gt;(Eureka Client)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="720" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="" style="endArrow=classic;startArrow=classic;html=1;exitX=0.005;exitY=0.63;exitDx=0;exitDy=0;entryX=0.995;entryY=0.63;entryDx=0;entryDy=0;entryPerimeter=0;exitPerimeter=0;" parent="1" source="25" target="27" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="330" y="490" as="sourcePoint"/>
+                        <mxPoint x="330" y="620" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="30" value="" style="aspect=fixed;html=1;dashed=0;whitespace=wrap;verticalLabelPosition=bottom;verticalAlign=top;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon2;prIcon=api;" parent="1" vertex="1">
+                    <mxGeometry x="450" y="640" width="83.33" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="MS-cliente 1&lt;br&gt;(Eureka Client)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="431.67" y="720" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="" style="endArrow=classic;startArrow=classic;html=1;exitX=0.005;exitY=0.63;exitDx=0;exitDy=0;entryX=0.995;entryY=0.63;entryDx=0;entryDy=0;entryPerimeter=0;exitPerimeter=0;" parent="1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="453.28999999999996" y="690" as="sourcePoint"/>
+                        <mxPoint x="355.28999999999996" y="690" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
