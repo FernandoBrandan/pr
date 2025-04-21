@@ -1,0 +1,10 @@
+[build]
+  command = "bun run build"
+  publish = "dist"
+
+[[plugins]]
+  package = "netlify-plugin-use-bun"
+
+[build.environment]
+  USE_BUN = "1"
+  NODE_VERSION = "20"
