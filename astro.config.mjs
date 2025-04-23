@@ -2,9 +2,6 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
-import mermaid from "mermaid";
-
-
 // https://astro.build/config
 export default defineConfig({
 
@@ -14,6 +11,9 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'Proyectos',
+			customCss: [
+				"./src/styles/global.css" // Ruta a tu archivo CSS
+			  ],		
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
 			sidebar: [ 
 				{
@@ -33,11 +33,6 @@ export default defineConfig({
 					autogenerate: { directory: 'reference' },
 				},
 			],
-		}),
-
-		// @ts-ignore
-		mermaid({
-			theme: "default", // Opcional: "dark", "forest", etc.
 		}),
 	],
 
