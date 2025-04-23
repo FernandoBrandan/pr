@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "projects",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -12,6 +12,7 @@
   "dependencies": {
     "@astrojs/starlight": "^0.33.0",
     "astro": "^5.5.3",
+    "mermaid": "^11.6.0",
     "sharp": "^0.32.5"
   }
 }
