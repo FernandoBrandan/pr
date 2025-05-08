@@ -2,6 +2,8 @@
 title: "Ecommerce"
 description: ""
 slug: "systemDesign"
+
+import V1 from './v1.svg'
 ---
 
 ## Introducción
@@ -22,9 +24,9 @@ Flujo de trabajado:
 
 1. Usuario realiza una orden de compra
    - Verificación de datos del usuario y productos seleccionados
-   - Creacion de la orden de compra: 
+   - Creacion de la orden de compra:
      - Estado orden pendiente
-     - Estado pago pendiente.     
+     - Estado pago pendiente.
 2. Message Queue
    - Sistema verifica la disponibilidad de los productos y servicios
    - - Verifica y bloquea items en Redis.
@@ -32,7 +34,7 @@ Flujo de trabajado:
    - - Actualiza la base de datos principal.
    - - Libera los items en Redis.
    - - Actualiza los items en Redis
-3. Message Queue 
+3. Message Queue
    - Sistema de mercado de pago
      - Se crea un link de pago
      - Se envia el link de pago al registro de la orden de compra en DB.
@@ -43,16 +45,17 @@ Flujo de trabajado:
    - Web Hook: Se realizo una compra.
      - Se obtiene el dato de la compra.
      - Se obtiene el dato de la orden a traves de la compra.
-       - Actualizacion de la orden de compra: 
+       - Actualizacion de la orden de compra:
          - Estado orden pendiente
-         - Estado pago realizado.     
+         - Estado pago realizado.
 5. Event queue
    - Se publica el evento de pago realizado.
      - Se notifica al usuario del pedido en proceso.
      - Se notifica al deposito de productos.
 
 Extras:
-- Servicios de citas/turnos: 
+
+- Servicios de citas/turnos:
   - Generar turnos.
   - Agendar citas.
   - Cancelar citas.
@@ -61,7 +64,8 @@ Extras:
 
 ## Boceto 1
 
-<img src="./v1.svg" alt="Boceto 1" /> 
+<img src="./v1.svg" alt="Boceto 1" />
+<img src={V1} alt="Boceto 1" />
 
 ## Lecturas
 
