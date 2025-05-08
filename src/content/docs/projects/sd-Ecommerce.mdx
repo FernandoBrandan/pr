@@ -2,8 +2,6 @@
 title: "Ecommerce"
 description: ""
 slug: "systemDesign"
-
-import V1 from './v1.svg'
 ---
 
 ## Introducción
@@ -17,10 +15,11 @@ Base de datos principal se cargan los registros desde las apiRest CRUD.
 
 - Gateway API : Autenticacion, Autorizacion, Monitoreo, Cors, Logs.
 - Redis: Cache.
+- Rabbit: message queue, pub/sub, message broker.
 - Integracion de pagos, Integracion de correo electronico, Integracion de notificaciones.
 - Integracion de envio de productos, Integracion de almacenamiento de archivos.
 
-Flujo de trabajado:
+## Flujo de trabajado:
 
 1. Usuario realiza una orden de compra
    - Verificación de datos del usuario y productos seleccionados
@@ -65,7 +64,6 @@ Extras:
 ## Boceto 1
 
 <img src="./v1.svg" alt="Boceto 1" />
-<img src={V1} alt="Boceto 1" />
 
 ## Lecturas
 
