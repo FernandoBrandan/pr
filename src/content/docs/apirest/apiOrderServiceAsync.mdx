@@ -1,7 +1,22 @@
 ---
 title: "Api OrderService Async"
 description: "Api de ordenes de servicios gestiona el procesamiento de órdenes de compra."
-slug: "apiOrderService"
+slug: "apiOrderServiceAsync"
 ---
 
-# Proyecto: OrderService
+# Proyecto: OrderService Asyncrono
+
+El servicio **OrderService** gestiona el procesamiento de órdenes de compra de manera asincróna,
+validando datos de clientes y artículos en la base de datos,
+y el pago de las órdenes,
+integrando RabbitMQ para la validación de stock y precios,
+
+> [Código fuente](https://github.com/)
+
+## Tecnologías utilizadas
+
+- Node.js + Express + TypeScript
+- RabbitMQ (Cola de mensajes para validación de stock y precios)
+- Pub/Sub (Procesos asincrónicos como notificaciones)
+- MongoDB
+- Docker
