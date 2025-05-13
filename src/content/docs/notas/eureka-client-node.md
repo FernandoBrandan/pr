@@ -4,6 +4,20 @@ description: "eureka-client.ts"
 slug: "eureka-client.ts"
 ---
 
+```yml
+# docker-compose
+services:
+  eureka-server:
+    image: steeltoeoss/eureka-server
+    container_name: eureka_service
+    ports:
+      - "8761:8761"
+    environment:
+      - EUREKA_CLIENT_REGISTERWITH_EUREKA=false
+      - EUREKA_CLIENT_FETCHREGISTRY=false
+    networks:
+      - api-network
+```
 
 ```ts
 // ./getConfig
