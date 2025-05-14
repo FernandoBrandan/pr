@@ -4,26 +4,20 @@ description: "El servicio Payment gestiona pagos en una arquitectura basada en e
 slug: "apiPayment"
 ---
 
-# Proyecto: Payment service con RabbitMQ
+El servicio **Payment** es un microservicio encargado de gestionar los pagos de comercio electrónico mediante la API de MercadoPago como pasarela de pago. Este componente recibe las órdenes de compra, procesa la información correspondiente y genera la preferencia de pago en MercadoPago, devolviendo al cliente los datos necesarios para completar la transacción.
 
-El servicio **Payment** gestiona pagos en una arquitectura basada en eventos utilizando RabbitMQ como sistema de mensajería y MercadoPago como pasarela de pago.
-Este microservicio escucha mensajes en una cola de pagos (PAYMENT), procesa las órdenes y genera una preferencia de pago en MercadoPago.
 
-> [Código fuente](https://github.com/)
+> [Código fuente](https://github.com/FernandoBrandan/api-PaymentService)
 
 ## Tecnologías
 
-- Node.js con TypeScript
-- RabbitMQ para la gestión de eventos y comunicación entre microservicios.
+- Node.js - TypeScript
 - MercadoPago SDK para la integración de pagos.
 - Docker.
 
-# Arquitectura del Sistema
+## Endpoints
 
-El flujo del microservicio Payment sigue la siguiente secuencia:
-
-- Publicación de eventos: El microservicio Orderservice envía un mensaje a la cola PAYMENT en RabbitMQ con los detalles de la orden.
-- Consumo del mensaje:
-  El microservicio Payment escucha la cola y procesa los mensajes entrantes.
-- Validación y creación del pago: Se genera una preferencia de pago en MercadoPago utilizando la información recibida.
-- Respuesta: Se devuelve un enlace (init_point) donde el usuario puede completar el pago.
+- Crear un pago (POST → /pagos/crear) - return init_point
+- Webhook
+- Consultar un pago (GET → /pagos/{id}
+- Listar todos los pagos (GET → /pagos)

@@ -7,11 +7,10 @@ slug: "apiOrderServiceAsync"
 # Proyecto: OrderService Asyncrono
 
 El servicio **OrderService** gestiona el procesamiento de órdenes de compra de manera asincróna,
-validando datos de clientes y artículos en la base de datos,
-y el pago de las órdenes,
-integrando RabbitMQ para la validación de stock y precios,
+validando datos de clientes y artículos en la base de datos y creacion de link de pago.
+Arquitectura de microservicios, basada en eventos y mensajería asíncrona.
 
-> [Código fuente](https://github.com/)
+> [Código fuente](https://github.com/FernandoBrandan/api-OrderServiceAsinc)
 
 ## Tecnologías utilizadas
 
@@ -20,3 +19,22 @@ integrando RabbitMQ para la validación de stock y precios,
 - Pub/Sub (Procesos asincrónicos como notificaciones)
 - MongoDB
 - Docker
+
+## Flujo de trabajo.
+1. Usuario realiza una orden de compra.
+   - Verificación de datos del usuario y productos seleccionados.
+   - Creacion de la orden de compra.
+     - Estado orden pendiente.
+     - Estado pago pendiente.
+2. Message Queue.
+   - Sistema verifica la disponibilidad de los productos y servicios.
+3. Message Queue.
+   - Sistema de mercado de pago.
+4. Usuario espera el link de pago.
+   - Sistema notifica al usuario sobre el link de pago.
+   - Usuario realiza el pago.
+   - Web Hook: Se realizo una compra.
+5. Pub/Sub.
+   - Se publica el evento de pago realizado.
+     - Se notifica al usuario del pedido en proceso.
+     - Se notifica al deposito de productos.
