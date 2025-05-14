@@ -4,7 +4,8 @@ description: "El servicio Payment gestiona pagos en una arquitectura basada en e
 slug: "apiPayment"
 ---
 
-El servicio **Payment** es un microservicio encargado de gestionar los pagos de comercio electrónico mediante la API de MercadoPago como pasarela de pago. Este componente recibe las órdenes de compra, procesa la información correspondiente y genera la preferencia de pago en MercadoPago, devolviendo al cliente los datos necesarios para completar la transacción.
+El servicio **Payment** es un microservicio encargado de gestionar los pagos de comercio electrónico mediante la API de MercadoPago como pasarela de pago.
+Este componente recibe las órdenes de compra, procesa la información correspondiente y genera la preferencia de pago en MercadoPago, devolviendo al cliente los datos necesarios para completar la transacción.
 
 > [Código fuente](https://github.com/FernandoBrandan/api-PaymentService)
 
@@ -16,7 +17,8 @@ El servicio **Payment** es un microservicio encargado de gestionar los pagos de 
 
 ## Endpoints
 
-- Crear un pago (POST → /pagos/crear) - return init_point
+```md
 - Webhook
 - Consultar un pago (GET → /pagos/{id})
 - Listar todos los pagos (GET → /pagos)
+```
