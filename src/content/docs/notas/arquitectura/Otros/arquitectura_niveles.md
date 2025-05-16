@@ -3,20 +3,18 @@ title: Arquitectura Niveles
 description: Apuntes varios
 ---
 
-# 01 - Niveles
+- La arquitectura de N niveles divide una aplicación en capas lógicas y niveles físicos.
+- Las capas son una forma de separar responsabilidades y gestionar dependencias.
+- Cada capa tiene una responsabilidad específica.
+- Una capa superior puede utilizar servicios de una capa inferior, pero no al revés.
 
-La arquitectura de N niveles divide una aplicación en capas lógicas y niveles físicos.
-Las capas son una forma de separar responsabilidades y gestionar dependencias.
-Cada capa tiene una responsabilidad específica.
-Una capa superior puede utilizar servicios de una capa inferior, pero no al revés.
+![n-tier-architecture]("https://www.karanpratapsingh.com/_next/image?url=%2Fstatic%2Fcourses%2Fsystem-design%2Fchapter-III%2Fn-tier-architecture%2Fn-tier-architecture.png&w=3840&q=75")
 
-![n-tier-architecture.webp]("https://www.karanpratapsingh.com/_next/image?url=%2Fstatic%2Fcourses%2Fsystem-design%2Fchapter-III%2Fn-tier-architecture%2Fn-tier-architecture.png&w=3840&q=75 align="left"")
-
-Los niveles están separados físicamente y se ejecutan en máquinas distintas.
-Una capa puede llamar directamente a otra o utilizar mensajería asíncrona.
-Aunque cada capa puede alojarse en su propio nivel, no es necesario.
-Varias capas pueden alojarse en la misma capa.
-Separar físicamente los niveles mejora la escalabilidad y la resistencia y añade latencia por la comunicación de red adicional.
+- Los niveles están separados físicamente y se ejecutan en máquinas distintas.
+- Una capa puede llamar directamente a otra o utilizar mensajería asíncrona.
+- Aunque cada capa puede alojarse en su propio nivel, no es necesario.
+- Varias capas pueden alojarse en la misma capa.
+- Separar físicamente los niveles mejora la escalabilidad y la resistencia y añade latencia por la comunicación de red adicional.
 
 Una arquitectura de N niveles puede ser de dos tipos:
 
