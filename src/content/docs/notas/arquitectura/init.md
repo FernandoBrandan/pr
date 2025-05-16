@@ -3,7 +3,7 @@ title: "Relaciones"
 description: "Relaciones entre Patrones y Arquitecturas de Software"
 --- 
 
-# Relaciones entre Patrones y Arquitecturas de Software
+### Relaciones entre Patrones y Arquitecturas de Software
 
 ## Arquitecturas Tradicionales
 | **Patrón/Arquitectura** | **Relaciones Clave**		  | **Características**                                   | **Casos de Uso**                             |
