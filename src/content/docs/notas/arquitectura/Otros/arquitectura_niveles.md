@@ -3,6 +3,10 @@ title: Arquitectura Niveles
 description: Apuntes varios
 --- 
 
+import { Image } from 'astro:assets';
+import tier from '../assets/n-tier-architecture.webp';
+
+
 # 01 - Niveles
 
 La arquitectura de N niveles divide una aplicación en capas lógicas y niveles físicos. 
@@ -13,6 +17,7 @@ n-tier-architecture.webp
 
 ![Arquitectura en N capas](/n-tier-architecture.webp)
 
+![A rocketship in space](../assets/rocket.png)
 
 /home/fernando/Escritorio/pr/public/n-tier-architecture.webp
 
