@@ -52,18 +52,18 @@ Permiten escalar independientemente partes de la aplicación.
 - Service Discovery Pattern: Clave en entornos de ms, permite a los servicios encontrar y comunicarse dinámicamente.
 - Circuit Breaker Pattern: Evita fallos en cascada en sistemas distribuidos, mejora la resiliencia y disponibilidad.
 
-## Si manejas fallos y resiliencia
+## Fallos y resiliencia
 - Retry Pattern: Esencial para manejar fallos transitorios en redes y servicios externos.
 - Bulkhead Pattern: Mejora la estabilidad de sistemas al aislar recursos y prevenir sobrecarga en servicios críticos.
  
 ## Serverless 
-Puede integrar mensajería con colas y eventos.
+Integrar mensajería con colas y eventos.
 Funciones en la nube que escalan bajo demanda.
 
 ___
-# Ejemplos
+## Ejemplos
 
-## Microservices + EDA + MDA + Pub-Sub
+### Microservices + EDA + MDA + Pub-Sub
 Arquitectura típica de sistemas modernos distribuidos
 - Cada microservicio se comunica a través de eventos y mensajes.
 - Se usa Pub-Sub para distribuir eventos a múltiples consumidores.
@@ -75,7 +75,7 @@ Ejemplos:
 - Un servicio de Facturación recibe el evento y genera la factura.
 - Tecnologías: Kafka, RabbitMQ, NATS, gRPC, WebSockets.
 
-## Microservices + Message Queues + Pub-Sub
+### Microservices + Message Queues + Pub-Sub
 
 Evita pérdida de datos en sistemas de alta disponibilidad.
 -  Message Queues garantizan entrega de eventos.
@@ -88,7 +88,7 @@ Ejemplo:
 - Un servicio de Notificaciones escucha el mensaje y envía un correo al usuario.
 - Tecnologías: RabbitMQ, AWS SQS, Apache Kafka.
 
-## Serverless + Event-Driven + Message Queues -> Service Discovery
+### Serverless + Event-Driven + Message Queues -> Service Discovery
 
 Para sistemas escalables sin servidores gestionados manualmente.
 - Serverless permite ejecutar funciones bajo demanda.
@@ -103,7 +103,7 @@ Ejemplo:
 - Tecnologías: AWS Lambda, Google Cloud Functions, Azure Functions, Firebase.
 
 
-## Ejemplo Completo: Un E-commerce Moderno
+### Ejemplo Completo: Un E-commerce Moderno
 - El usuario realiza una compra → Se genera un evento "Pedido Creado".
 - EDA distribuye el evento → Servicios como Pagos, Inventario y Notificaciones reaccionan.
 - CQRS procesa la compra → Comandos actualizan el estado, consultas optimizan reportes.
