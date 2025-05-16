@@ -1,8 +1,6 @@
 ---
 title: nginx
 description: nginx configuraciones, apigateway, reverse proxy, etc.
-notas: true
-slug: nginx
 ---
 
 - https://www.solo.io/topics/nginx
