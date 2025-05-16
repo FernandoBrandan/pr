@@ -1,6 +1,6 @@
 ---
-title: Concurrencia Redis DB
-description: Concurrencia Redis DB
+title: "Concurrencia Redis_DB"
+description: "Concurrencia Redis_DB"
 ---
 
 En el contexto de un sistema de ecommerce, la concurrencia puede ser un desafío crítico. 
