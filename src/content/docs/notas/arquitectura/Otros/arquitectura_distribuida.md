@@ -1,9 +1,11 @@
 ---
-title: Ejemplo de proyecto
+title: Ejemplo Arq distribuida
 description: Apuntes varios
 --- 
 
 **EDA** **MDA** **Sistema distribuido** **Eventos y mensajes** **Microservicios** **Event Sourcing** 
+
+## Arquitectura distribuida orientada a eventos
  
 - MS : inventario, envíos, notificaciones, pagos, etc. 
 - Basado en eventos y mensajes interacción de manera desacoplada. 
