@@ -1,6 +1,6 @@
 ---
-title: Message Architecture
-description: Apuntes varios
+title: Queues Strems Broker
+description: Queues Strems Broker
 --- 
 
 # Message Queues (Colas de Mensajes)
