@@ -8,9 +8,7 @@ description: Apuntes varios
 - Cada capa tiene una responsabilidad específica.
 - Una capa superior puede utilizar servicios de una capa inferior, pero no al revés.
 
-
 <Image src="https://www.karanpratapsingh.com/_next/image?url=%2Fstatic%2Fcourses%2Fsystem-design%2Fchapter-III%2Fn-tier-architecture%2Fn-tier-architecture.png&w=3840&q=75" />
-<img src="https://www.karanpratapsingh.com/_next/image?url=%2Fstatic%2Fcourses%2Fsystem-design%2Fchapter-III%2Fn-tier-architecture%2Fn-tier-architecture.png&w=3840&q=75" />
 
 - Los niveles están separados físicamente y se ejecutan en máquinas distintas.
 - Una capa puede llamar directamente a otra o utilizar mensajería asíncrona.
