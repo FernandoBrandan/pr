@@ -11,7 +11,7 @@ Cada capa tiene una responsabilidad específica.
 Una capa superior puede utilizar servicios de una capa inferior, pero no al revés.
 n-tier-architecture.webp
 
-![tier]("src/assets/n-tier-architecture.webp")
+![tier]("../../../../../assets/n-tier-architecture.webp")
 
 Los niveles están separados físicamente y se ejecutan en máquinas distintas.
 Una capa puede llamar directamente a otra o utilizar mensajería asíncrona.
