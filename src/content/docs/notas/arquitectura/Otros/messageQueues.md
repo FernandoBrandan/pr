@@ -1,4 +1,3 @@
-
 ---
 title: Message Queues
 description: Message Queues
