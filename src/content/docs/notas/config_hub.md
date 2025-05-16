@@ -1,7 +1,6 @@
 ---
 title: "Configuración centralizada"
-description: "Configuración centralizada"
-slug: "Configuración centralizada"
+description: "Configuración centralizada" 
 ---
 
 ## Configuración Dinámica
