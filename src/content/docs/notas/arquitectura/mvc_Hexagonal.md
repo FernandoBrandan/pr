@@ -54,11 +54,6 @@ N-tier: Agrega más capas como autenticación, caché, API Gateway.
 https://www.karanpratapsingh.com/courses/system-design/n-tier-architecture
 
 
-___
-___
-___
-
-
 
 ## 3. Otras no comunes - Poco relevantes para mi uso
 
