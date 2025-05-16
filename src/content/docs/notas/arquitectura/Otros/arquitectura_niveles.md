@@ -14,12 +14,7 @@ Las capas son una forma de separar responsabilidades y gestionar dependencias.
 Cada capa tiene una responsabilidad específica. 
 Una capa superior puede utilizar servicios de una capa inferior, pero no al revés.
 n-tier-architecture.webp
-
-![Arquitectura en N capas](/n-tier-architecture.webp)
-
-![A rocketship in space](../assets/rocket.png)
-
-/home/fernando/Escritorio/pr/public/n-tier-architecture.webp
+ 
 
 
 Los niveles están separados físicamente y se ejecutan en máquinas distintas. 
