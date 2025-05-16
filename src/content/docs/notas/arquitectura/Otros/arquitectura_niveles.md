@@ -2,10 +2,7 @@
 title: Arquitectura Niveles
 description: Apuntes varios
 --- 
-
-import { Image } from 'astro:assets';
-import tier from '../assets/n-tier-architecture.webp';
-
+ 
 
 # 01 - Niveles
 
@@ -14,8 +11,9 @@ Las capas son una forma de separar responsabilidades y gestionar dependencias.
 Cada capa tiene una responsabilidad específica. 
 Una capa superior puede utilizar servicios de una capa inferior, pero no al revés.
 n-tier-architecture.webp
- 
 
+
+![A rocketship in space](../../../../../assets/n-tier-architecture.webp)
 
 Los niveles están separados físicamente y se ejecutan en máquinas distintas. 
 Una capa puede llamar directamente a otra o utilizar mensajería asíncrona. 
