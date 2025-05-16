@@ -76,7 +76,7 @@ Las píldoras venenosas son mensajes especiales que se pueden recibir, pero no p
 - __Security:__
 Las colas de mensajes autenticarán las aplicaciones que intentan acceder a la cola, esto nos permite cifrar mensajes a través de la red, así como en la cola misma.
 
--  <mark>__Task Queues:__
+- <mark>__Task Queues:__
   - Las colas de tareas reciben tareas y sus datos relacionados, los ejecutan y luego entregan sus resultados. 
   - Pueden admitir la programación y pueden usarse para ejecutar trabajos computacionalmente intensivos en el fondo.
   - https://docs.celeryq.dev/en/stable/
