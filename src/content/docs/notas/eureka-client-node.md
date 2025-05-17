@@ -1,6 +1,6 @@
 ---
-title: "eureka-client.ts"
-description: "eureka-client.ts" 
+title: eureka-client.ts
+description: eureka-client.ts
 ---
 
 ```yml

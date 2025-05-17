@@ -1,6 +1,6 @@
 ---
-title: "Paginacion" 
-description: "Paginacion"
+title: Paginacion
+description: Paginacion
 --- 
 
 - Número de página (page=2)

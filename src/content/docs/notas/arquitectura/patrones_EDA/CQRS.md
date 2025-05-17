@@ -1,6 +1,6 @@
 ---
-title: "CQRS" 
-description: "CQRS"
+title: CQRS 
+description: CQRS
 --- 
 
 

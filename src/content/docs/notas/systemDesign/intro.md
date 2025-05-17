@@ -1,7 +1,6 @@
 ---
-title: "System Design"
-description: "systemDesign."
-slug: "systemDesign"
+title: System Design
+description: systemDesign.
 ---
 
 > https://www.youtube.com/watch?v=ZgdS0EUmn70

@@ -1,6 +1,6 @@
 ---
-title: "Relaciones"
-description: "Relaciones entre Patrones y Arquitecturas de Software"
+title: Relaciones
+description: Relaciones entre Patrones y Arquitecturas de Software
 --- 
 
 ### Relaciones entre Patrones y Arquitecturas de Software

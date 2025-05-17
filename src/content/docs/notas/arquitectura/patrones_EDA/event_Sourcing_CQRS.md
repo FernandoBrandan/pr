@@ -1,6 +1,6 @@
 ---
-title: "Event Sourcing y CQRS" 
-description: "Event Sourcing y CQRS"
+title: Event Sourcing y CQRS
+description: Event Sourcing y CQRS
 --- 
 
 ## En algun proyecto debo usar CQRS o Event Sourcing

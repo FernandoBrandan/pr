@@ -1,6 +1,6 @@
 ---
-title: "Json response"
-description: "Json response." 
+title: Json response
+description: Json response.
 ---
 
 https://stackify.com/node-js-error-handling/

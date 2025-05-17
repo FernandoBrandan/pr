@@ -1,6 +1,6 @@
 ---
-title: "Event Sourcing" 
-description: "Event Sourcing"
+title: Event Sourcing
+description: Event Sourcing
 --- 
 
 https://github.com/cer/event-sourcing-examples

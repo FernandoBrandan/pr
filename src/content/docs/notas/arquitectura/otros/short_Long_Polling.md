@@ -1,6 +1,6 @@
 ---
-title: "Short/Long Polling" 
-description: "Short Polling vs. Long Polling"
+title: Short/Long Polling
+description: Short Polling vs. Long Polling
 --- 
 https://blog.tundeonasanya.dev/short-polling-vs-long-polling-understanding-the-differences-and-when-to-use-each-clfsmzdmf00000amidruc02uc
 
