@@ -1,6 +1,6 @@
 ---
-title: "Guia"
-description: "" 
+title: Guia
+description: Guia 
 --- 
 
 ## 1. Gestión de Inventario

@@ -1,6 +1,6 @@
 ---
-title: "Ecommerce"
-description: "" 
+title: Ecommerce
+description: Ecommerce
 ---
 
 ## Introducción
