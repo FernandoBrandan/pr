@@ -1,5 +1,5 @@
 ---
-title:
+title: Rate limit
 description: Rate limit
 ---
 
