@@ -1,6 +1,6 @@
 ---
 title: node:amqplib
-description: Ejemplo producer y consumidor de mensajes con amqplib 
+description: producer/consumer message amqplib 
 ---
 
 ## producer
