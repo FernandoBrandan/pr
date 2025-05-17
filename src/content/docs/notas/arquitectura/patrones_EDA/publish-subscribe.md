@@ -3,10 +3,9 @@ title: Publish-Subscribe
 description: Publish-Subscribe
 --- 
 
+____
 https://www.youtube.com/watch?v=O1PgqUqZKTA
 https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern
-
-____
 
 Publish-Subscribe es una forma de comunicación de servicio a servicio que facilita la comunicación asíncrona. En un modelo de pub/sub, cualquier mensaje publicado sobre un tema se envía inmediatamente a todos los suscriptores del tema.
 

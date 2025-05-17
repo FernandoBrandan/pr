@@ -3,7 +3,8 @@ title: Arquitectura Utilizadas
 description: Apuntes varios
 --- 
 
-**Modular** - **Repository** - **Microservicios** - **Event-Driven**
+### **Modular** - **Repository** - **Microservicios** - **Event-Driven**
+
 |                | Usarlo cuando...                                      |
 | -------------- | ------------------------------------------------------| 
 | Modular        | Mantener código organizado en módulos.                |

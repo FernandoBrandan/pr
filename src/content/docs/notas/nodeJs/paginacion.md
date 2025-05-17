@@ -3,6 +3,7 @@ title: Paginacion
 description: Paginacion
 --- 
 
+### 
 - Número de página (page=2)
 - Cantidad de elementos por página (per_page=10)
 - Cálculo de límites:  (página 2 - tamaño 10) devolverá los elementos del índice 10 al 19.

@@ -3,7 +3,8 @@ title: MDA, EDA, Event Sourcing
 description: Apuntes varios
 --- 
 
-- Message-Driven Architecture (MDA) - Event-Driven Architecture (EDA) - Event Sourcing
+### Message-Driven Architecture (MDA) - Event-Driven Architecture (EDA) - Event Sourcing
+
 - Son enfoques avanzados en sistemas distribuidos que aprovechan el procesamiento y la gestión de eventos o mensajes
 - Están estrechamente vinculados con la idea de la mensajería porque todos hacen un uso extensivo de mensajes o eventos 
 como forma de comunicación entre los distintos componentes del sistema. 

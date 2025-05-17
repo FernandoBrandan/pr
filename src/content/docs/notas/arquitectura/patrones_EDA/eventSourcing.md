@@ -3,6 +3,7 @@ title: Event Sourcing
 description: Event Sourcing
 --- 
 
+____
 https://github.com/cer/event-sourcing-examples
 https://martinfowler.com/eaaDev/EventSourcing.html
 
@@ -13,14 +14,14 @@ La tienda actúa como el sistema de registro y puede usarse para materializar lo
 
 Esto puede simplificar las tareas en dominios complejos, evitando la necesidad de sincronizar el modelo de datos y el dominio comercial, al tiempo que mejora el rendimiento, la escalabilidad y la capacidad de respuesta. También puede proporcionar consistencia para los datos transaccionales y mantener pistas de auditoría completas e historial que puedan permitir acciones compensatorias.
 
-### Abastecimiento de eventos versus arquitectura impulsada por eventos ( EDA )
-El abastecimiento de eventos aparentemente se confunde constantemente con Arquitectura impulsada por eventos ( EDA ). 
+### Event Sourcing versus arquitectura impulsada por eventos ( EDA )
+El Event Sourcing aparentemente se confunde constantemente con Arquitectura impulsada por eventos ( EDA ). 
 La arquitectura basada en eventos se trata de usar eventos para comunicarse entre los límites del servicio. 
 En general, aprovechar un agente de mensajes para publicar y consumir eventos de forma asincrónica dentro de otros límites.
 
-Mientras que el abastecimiento de eventos se trata de usar eventos como un estado, que es un enfoque diferente para almacenar datos. 
+Mientras que el Event Sourcing se trata de usar eventos como un estado, que es un enfoque diferente para almacenar datos. 
 En lugar de almacenar el estado actual, en cambio vamos a almacenar eventos. 
-Además, el abastecimiento de eventos es uno de los varios patrones para 
+Además, el Event Sourcing es uno de los varios patrones para 
 implementar una arquitectura basada en eventos.
 
 

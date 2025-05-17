@@ -3,7 +3,7 @@ title: CQRS
 description: CQRS
 --- 
 
-
+____
 https://learn.microsoft.com/en-us/azure/architecture/patterns/cqrs
 
 ### Command and Query Responsibility Segregation 
