@@ -3,6 +3,7 @@ title: Message Queues
 description: Message Queues
 --- 
 
+____
 - Características clave:
   - Funciona como una estructura FIFO (First-In, First-Out).
   - Los mensajes se mantienen en la cola hasta que un consumidor los lee y los procesa.

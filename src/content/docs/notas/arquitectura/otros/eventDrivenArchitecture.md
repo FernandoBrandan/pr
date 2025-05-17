@@ -3,6 +3,7 @@ title: Event-Driven Architecture
 description: Event-Driven Architecture (EDA)
 --- 
 
+____
 https://medium.com/@diego.coder/introducci%C3%B3n-a-la-arquitectura-orientada-a-eventos-a532c71c9945
 
 Trata sobre el uso de eventos como una forma de comunicarse dentro de un sistema. 

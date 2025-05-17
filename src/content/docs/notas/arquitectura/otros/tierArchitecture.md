@@ -3,6 +3,7 @@ title: Arquitectura Niveles
 description: Apuntes varios
 ---
 
+____
 - La arquitectura de N niveles divide una aplicación en capas lógicas y niveles físicos.
 - Las capas son una forma de separar responsabilidades y gestionar dependencias.
 - Cada capa tiene una responsabilidad específica.

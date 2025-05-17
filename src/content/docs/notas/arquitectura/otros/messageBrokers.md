@@ -3,10 +3,10 @@ title: Message Brokers
 description: Message Brokers
 --- 
 
+____
 https://www.youtube.com/watch?v=57Qr9tk6Uxc
 https://www.ibm.com/mx-es/topics/message-brokers
 https://hasithas.medium.com/introduction-to-message-brokers-c4177d2a9fe3 
-____
 
 Un Message Broker es un sistema que gestiona la comunicación entre servicios enviando y recibiendo mensajes. 
 

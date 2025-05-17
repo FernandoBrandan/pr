@@ -3,6 +3,7 @@ title: Enterprise Service Bus
 description: Enterprise Service Bus (ESB)
 --- 
 
+____
 Es un patrón mediante el cual un componente de software centralizado realiza integraciones entre aplicaciones. 
 Realiza transformaciones de modelos de datos, maneja conectividad, realiza enrutamiento de mensajes, convierte protocolos de comunicación y potencialmente gestiona la composición de múltiples solicitudes. 
 El ESB puede hacer que estas integraciones y transformaciones estén disponibles como una interfaz de servicio para su reutilización por nuevas aplicaciones.

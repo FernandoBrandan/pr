@@ -3,6 +3,7 @@ title: Otras Arquitecturas
 description: Apuntes varios
 --- 
 
+____
 ## Otras Arquitecturas o Patrones menos utilizados
 
 | Patrón         | Usarlo cuando...                                              |
