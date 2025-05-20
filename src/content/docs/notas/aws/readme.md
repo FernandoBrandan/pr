@@ -26,8 +26,9 @@ description: Aws
   - AWS Shared Responsibility Model para entender la seguridad de tu infraestructura.
     [AWS Documentation](https://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/microservices-on-aws.html)
 - 1.2. Consola, CLI y SDK
-  - Familiarízate con la AWS Management Console y la AWS CLI: instala awscli, configura perfiles con aws configure. [Amazon Web Services, Inc.](https://aws.amazon.com/es/cloudformation/getting-started/)
-  - Aprende nociones básicas de SDK para Node.js (Boto3 en Python o AWS SDK v3 en JavaScript) para automatizar tareas.
+  - AWS Management Console y la AWS CLI: instala awscli, configura perfiles con aws configure.
+    [Amazon Web Services, Inc.](https://aws.amazon.com/es/cloudformation/getting-started/)
+  - Basico de SDK para Node.js para automatizar tareas.
 
 ## 2. Compute Serverless con AWS Lambda
 
