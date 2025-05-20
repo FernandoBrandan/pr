@@ -18,17 +18,16 @@ description: Aws
 3. Después profundizarás en Step Functions para orquestación, CloudFormation para IaC, DynamoDB y RDS para modelado de datos, y patrones avanzados como CQRS y event sourcing.
 4. Finalmente, integrarás API Gateway con JWT e IAM y consolidarás todo mediante proyectos prácticos y certificaciones.
 
-## 1. Fundamentos de AWS
+## 1. AWS
 
-- 1.1. Cuenta AWS y Free Tier
-  - Crea una cuenta en AWS y activa el Free Tier para experimentar sin costo durante 12 meses.
-    [Amazon Web Services, Inc](https://aws.amazon.com/es/training/learn-about/serverless/)
-  - AWS Shared Responsibility Model para entender la seguridad de tu infraestructura.
-    [AWS Documentation](https://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/microservices-on-aws.html)
-- 1.2. Consola, CLI y SDK
-  - AWS Management Console y la AWS CLI: instala awscli, configura perfiles con aws configure.
-    [Amazon Web Services, Inc.](https://aws.amazon.com/es/cloudformation/getting-started/)
-  - Basico de SDK para Node.js para automatizar tareas.
+- Según la función:
+  - [Arquitectura](https://aws.amazon.com/es/training/learn-about/architect/?la=sec&sec=role)
+  - [Desarrollador](https://aws.amazon.com/es/training/learn-about/developer/?la=sec&sec=role)
+- Según la solución:
+  - [Bases de datos](https://aws.amazon.com/es/training/learn-about/databases/?la=sec&sec=solution)
+  - [Serverless](https://aws.amazon.com/es/training/learn-about/serverless/)
+  - [Almacenamiento](https://aws.amazon.com/es/training/learn-about/storage/?la=sec&sec=solution)
+- MS: [Link](https://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/microservices-on-aws.html)
 
 ## 2. Compute Serverless con AWS Lambda
 
