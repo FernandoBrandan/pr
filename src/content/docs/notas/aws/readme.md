@@ -3,7 +3,7 @@ title: Aws
 description: Aws
 ---
 
-- Microservicios desacoplados,
+- Microservicios desacoplados
 - Arquitecturas event-driven en AWS
 - Serverless
 - Mensajería asíncrona
@@ -12,11 +12,6 @@ description: Aws
 - Bases de datos NoSQL/SQL
 - Patrones CQRS/Event Sourcing
 - Seguridad con API Gateway
-
-1. Comenzarás instalando y familiarizándote con la consola, la CLI y el modelo de responsabilidad compartida de AWS.
-2. Luego avanzarás a computación serverless con Lambda, mensajería con SQS y SNS, y al diseño de arquitecturas orientadas a eventos.
-3. Después profundizarás en Step Functions para orquestación, CloudFormation para IaC, DynamoDB y RDS para modelado de datos, y patrones avanzados como CQRS y event sourcing.
-4. Finalmente, integrarás API Gateway con JWT e IAM y consolidarás todo mediante proyectos prácticos y certificaciones.
 
 ## 1. AWS
 
@@ -28,6 +23,33 @@ description: Aws
   - [Serverless](https://aws.amazon.com/es/training/learn-about/serverless/)
   - [Almacenamiento](https://aws.amazon.com/es/training/learn-about/storage/?la=sec&sec=solution)
 - MS: [Link](https://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/microservices-on-aws.html)
+
+### Etapa 1
+
+1. [IAM](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/iam-examples.html)
+   gestión de identidades y permisos, para asegurar credenciales y roles adecuados en tus aplicaciones
+2. [Almacenamiento S3](https://jsonworld.com/blog/most-common-aws-services-a-nodejs-developer-should-know)
+3. [EC2 y Elastic Beanstalk](https://stackoverflow.com/questions/66156246/what-aws-services-can-i-use-to-deploy-node-js-app)
+
+### Etapa 2
+
+Tras desplegar servidores, explorar arquitecturas serverless con AWS Lambda y Amazon API Gateway permite ejecutar código sin gestionar infraestructuras
+
+1. [Infraestructuras](https://medium.com/%40interviewer.live/how-to-use-aws-services-with-node-js-for-scalable-web-applications-4927c2efc561)
+2. DynamoDB (NoSQL) - RDS (SQL)
+3. Monitorización y logging [CloudWatch](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/cloudwatch-examples.html)
+4. Servicios de mensajería como SQS y SNS.
+   [SQS](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/sqs-examples.html)
+   [SNS](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/sns-examples-publishing-messages.html)
+
+#### Siguiente Paso
+
+explora arquitecturas avanzadas:
+
+- EventBridge (event bus)
+- Step Functions (orquestación serverless)
+- Cognito (auth)
+- CDK/Serverless Framework para Infraestructura como Código
 
 ## 2. Compute Serverless con AWS Lambda
 
@@ -85,7 +107,7 @@ description: Aws
 - Usa CloudFormation para desplegar todo como IaC.
 - Prepara la certificación AWS Certified Solutions Architect – Associate o Developer – Associate siguiendo el AWS Learning Plan. [Amazon Web Services, Inc.](https://aws.amazon.com/es/training/learn-about/architect/)
 
-## Siguiente paso: Asigna tiempos semanales a cada módulo, realiza laboratorios Hands‑On en AWS Skill Builder y comparte tus avances en GitHub para recibir feedback.
+### Siguiente paso: Asigna tiempos semanales a cada módulo, realiza laboratorios Hands‑On en AWS Skill Builder y comparte tus avances en GitHub para recibir feedback.
 
 ## [Link AWS Documentation](https://docs.aws.amazon.com/)
 
@@ -94,26 +116,3 @@ description: Aws
 ## [Link Node](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/getting-started-nodejs.html)
 
 ## [Link Tools](https://aws.amazon.com/es/developer/tools/)
-
-- [IAM](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/iam-examples.html)
-  gestión de identidades y permisos, para asegurar credenciales y roles adecuados en tus aplicaciones
-- [Almacenamiento S3](https://jsonworld.com/blog/most-common-aws-services-a-nodejs-developer-should-know)
-- [EC2 y Elastic Beanstalk](https://stackoverflow.com/questions/66156246/what-aws-services-can-i-use-to-deploy-node-js-app)
-
-Tras desplegar servidores, explorar arquitecturas serverless con AWS Lambda y Amazon API Gateway permite ejecutar código sin gestionar infraestructuras
-
-- [Infraestructuras](https://medium.com/%40interviewer.live/how-to-use-aws-services-with-node-js-for-scalable-web-applications-4927c2efc561)
-- DynamoDB (NoSQL)
-- RDS (SQL)
-- Monitorización y logging [CloudWatch](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/cloudwatch-examples.html)
-- Servicios de mensajería como SQS y SNS
-  - [SQS](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/sqs-examples.html)
-  - [SNS](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/sns-examples-publishing-messages.html)
-
-## Siguiente Paso
-
-- explora arquitecturas avanzadas:
-  - EventBridge (event bus)
-  - Step Functions (orquestación serverless)
-  - Cognito (auth)
-  - CDK/Serverless Framework para Infraestructura como Código
