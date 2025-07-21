@@ -24,7 +24,12 @@ description: Aws
   - [Almacenamiento](https://aws.amazon.com/es/training/learn-about/storage/?la=sec&sec=solution)
 - MS: [Link](https://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/microservices-on-aws.html)
 
+[Youtube - Qué necesito saber como desarrollador? p1](https://www.youtube.com/watch?v=5kuWlvN6qCM)
+[Youtube - Qué necesito saber como desarrollador? p2](https://www.youtube.com/watch?v=SZh2MvNzRVc)
+
 ### Etapa 1
+
+[AWSJavaScriptSDK](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/)
 
 1. [IAM](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/iam-examples.html)
    gestión de identidades y permisos, para asegurar credenciales y roles adecuados en tus aplicaciones
