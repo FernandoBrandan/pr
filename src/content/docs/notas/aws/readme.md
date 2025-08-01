@@ -13,6 +13,12 @@ description: Aws
 - Patrones CQRS/Event Sourcing
 - Seguridad con API Gateway
 
+## Utilizados
+
+- Proyecto pastebin
+- - Serverless lambdas / apigateway
+- - DynamoDB / S3
+
 ## 1. AWS
 
 - Según la función:
