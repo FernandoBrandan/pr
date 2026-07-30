@@ -26,16 +26,7 @@ export default defineConfig({
 				},
 				{
 					label: 'Backend',
-					items: [
-						{
-							label: 'Nodejs',
-							autogenerate: { directory: '03 - Backend/Nodejs' },
-						},
-						{
-							label: 'Nestjs',
-							autogenerate: { directory: '03 - Backend/Nestjs' },
-						},
-					]
+					autogenerate: { directory: '03 - Backend' },
 				},
 				{
 					label: 'Architectures',
