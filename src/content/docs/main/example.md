@@ -1,6 +1,6 @@
 ---
-title: General
-description: Apuntes varios
+title: example
+description: example
 ---
 
 
