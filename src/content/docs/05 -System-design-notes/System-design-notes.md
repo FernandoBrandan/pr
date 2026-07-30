@@ -3,7 +3,7 @@ title: System design notes
 description: System design notes
 ---
 
-[Repositorie]()
+[Repository]()
 
 ### Fonts
 
