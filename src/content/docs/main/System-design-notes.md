@@ -3,22 +3,20 @@ title: System design notes
 description: System design notes
 ---
 
-# System design notes
-
 [Repositorie]()
 
-## Fonts
+### Fonts
 
-[karanpratapsingh](https://www.karanpratapsingh.com/)
-[bytebytego](https://bytebytego.com/)
-[systemoverflow](www.systemoverflow.com)
-[builddistributedsystem](https://builddistributedsystem.com/)
+- [karanpratapsingh](https://www.karanpratapsingh.com/)
+- [bytebytego](https://bytebytego.com/)
+- [systemoverflow](www.systemoverflow.com)
+- [builddistributedsystem](https://builddistributedsystem.com/)
 
-## Resume
+### Resume
 
-## Projects examples
+### Projects examples
 
-## Repositories extras
+### Repositories extras
 
 - [Notes of the book System Desgin Interview - An Insider's Guide](https://github.com/liquidslr/system-design-notes)
 - [ByteByteGoHq/coding-interview-patterns](https://github.com/ByteByteGoHq/coding-interview-patterns)
