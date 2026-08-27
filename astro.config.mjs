@@ -21,10 +21,6 @@ export default defineConfig({
 					autogenerate: { directory: '01 - Projects' },
 				},
 				{
-					label: 'Fundaments',
-					autogenerate: { directory: '02 - Fundaments' },
-				},
-				{
 					label: 'Backend',
 					autogenerate: { directory: '03 - Backend' },
 				},
@@ -35,7 +31,15 @@ export default defineConfig({
 				{
 					label: 'System-design-notes',
 					autogenerate: { directory: '05 -System-design-notes' },
-				}
+				},
+				{
+					label: 'Fundaments',
+					autogenerate: { directory: 'Fundaments' },
+				},
+				{
+					label: 'Extra',
+					autogenerate: { directory: 'Extra' },
+				},
 			],
 		}),
 	],

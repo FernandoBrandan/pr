@@ -7,7 +7,7 @@ description: Projects
 
 ## indice
 
-- Ecommerce
+- E-commerce
 - Reservas
 - Pastebin
 - Motor para procesar pagos masivos
