@@ -1,3 +1,7 @@
+---
+title: title
+description: description
+---
 
 ## Consensus Based vs Best Effort Lock Services: Latency and Safety Trade-offs
 

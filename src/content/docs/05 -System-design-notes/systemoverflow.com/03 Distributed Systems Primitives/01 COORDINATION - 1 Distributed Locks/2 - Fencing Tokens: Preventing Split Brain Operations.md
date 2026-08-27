@@ -1,3 +1,7 @@
+---
+title: title
+description: description
+---
 
 ## Fencing Tokens: Preventing Split Brain Operations
 

@@ -1,3 +1,8 @@
+---
+title: title
+description: description
+---
+
 ## Implementation Patterns: Renewal Loops, Observability, and Capacity Planning
 
 Production distributed lock implementations require careful attention to renewal discipline, observability, and capacity planning beyond simply calling acquire and release APIs. Clients must maintain a background renewal loop that attempts refresh well before TTL expiry, typically when 50 to 75 percent of the lease remains. For a 10 second lease, renew every 2 to 3 seconds. Expose renewal slack metrics measuring time remaining until expiry when renewal succeeds; alert if slack drops below a threshold like 50 percent of TTL, indicating the client is cutting renewal dangerously close. If renewal fails repeatedly, the client must immediately stop using the protected resource before its lease expires to prevent split brain operations.

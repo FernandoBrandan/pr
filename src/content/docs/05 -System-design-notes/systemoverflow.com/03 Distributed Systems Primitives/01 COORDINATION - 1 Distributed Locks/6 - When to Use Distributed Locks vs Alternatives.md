@@ -1,3 +1,7 @@
+---
+title: title
+description: description
+---
 
 ## When to Use Distributed Locks vs Alternatives
 

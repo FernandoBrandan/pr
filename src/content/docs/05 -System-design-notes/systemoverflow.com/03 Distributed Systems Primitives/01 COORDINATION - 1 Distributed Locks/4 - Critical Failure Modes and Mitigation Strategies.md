@@ -1,3 +1,7 @@
+---
+title: title
+description: description
+---
 
 ## Critical Failure Modes and Mitigation Strategies
 

@@ -1,3 +1,7 @@
+---
+title: title
+description: description
+---
 
 ## What are Distributed Locks and Why Do They Need Leases?
 
