@@ -1,7 +1,7 @@
 
 /* src/styles/global.css */
 html {
-    font-size: 14px; /* O el valor que desees, por ejemplo, 14px */
+    font-size: 16px; /* O el valor que desees, por ejemplo, 14px */
 }
 
 iframe[src*="roadmap.sh"] {
